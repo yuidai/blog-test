@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  front:
+    build: ./
+    container_name: blog-test
+    volumes:
+      - ./front:/front
+    working_dir: /front
+    ports:
+      - "3000:3000"
+    tty: true
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
