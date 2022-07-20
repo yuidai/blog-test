@@ -12,8 +12,10 @@
     "format": "prettier --write \"**/*.+(js|json|yml|ts|tsx)\""
   },
   "dependencies": {
+    "graphql": "^16.5.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "urql": "^2.2.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
@@ -29,8 +31,12 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "msw": "^0.44.2",
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
